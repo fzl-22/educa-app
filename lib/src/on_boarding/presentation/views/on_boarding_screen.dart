@@ -30,7 +30,7 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: Colours.whiteColour,
       body: GradientBackground(
         image: MediaRes.onBoardingBackground,
         child: BlocConsumer<OnBoardingCubit, OnBoardingState>(
@@ -84,7 +84,7 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
                       dotWidth: 10,
                       spacing: 40,
                       activeDotColor: Colours.primaryColour,
-                      dotColor: Colors.white,
+                      dotColor: Colours.transparentColour,
                     ),
                   ),
                 ),

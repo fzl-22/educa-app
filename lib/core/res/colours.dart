@@ -1,9 +1,9 @@
-import 'dart:ui';
+import 'package:flutter/material.dart';
 
 class Colours {
   const Colours._();
 
-  /// #EDF8FF, #FDC1E8, #FDFAE1, #FFFFFF
+  /// #EDF8FF, #FDC1E8, #FFFFFF, #FDFAE1
   static const gradient = [
     Color(0xFFEDF8FF),
     Color(0xFFFDC1E8),
@@ -44,17 +44,27 @@ class Colours {
   /// #28CA6C
   static const greenColour = Color(0xFF28CA6C);
 
+  /// #FFFFFF
+  static const whiteColour = Color(0xFFFFFFFF);
+
   /// #F4F5F6
   static const chatFieldColour = Color(0xFFF4F5F6);
 
   /// #E8E9EA
   static const chatFieldColourDarker = Color(0xFFE8E9EA);
 
+  /// #2196F3
   static const currentUserChatBubbleColour = Color(0xFF2196F3);
 
+  /// #EEEEEE
   static const otherUserChatBubbleColour = Color(0xFFEEEEEE);
 
+  /// #1976D2
   static const currentUserChatBubbleColourDarker = Color(0xFF1976D2);
 
+  /// #E0E0E0
   static const otherUserChatBubbleColourDarker = Color(0xFFE0E0E0);
+
+  /// TRANSPARENT
+  static const transparentColour = Colors.transparent;
 }

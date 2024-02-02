@@ -17,7 +17,7 @@ class OnBoardingButton extends StatelessWidget {
     return ElevatedButton(
       style: ElevatedButton.styleFrom(
         backgroundColor: Colours.primaryColour,
-        foregroundColor: Colors.white,
+        foregroundColor: Colours.whiteColour,
         padding: const EdgeInsets.symmetric(
           horizontal: 50,
           vertical: 17,
