@@ -9,16 +9,16 @@ Future<void> main() async {
 
   await init();
   
-  runApp(const MyApp());
+  runApp(const EducaApp());
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+class EducaApp extends StatelessWidget {
+  const EducaApp({super.key});
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Education App',
+      title: 'Educa App',
       theme: ThemeData(
         useMaterial3: true,
         visualDensity: VisualDensity.adaptivePlatformDensity,
