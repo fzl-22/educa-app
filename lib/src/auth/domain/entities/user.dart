@@ -6,10 +6,10 @@ class LocalUser extends Equatable {
     required this.email,
     required this.points,
     required this.fullName,
-    required this.groupId,
-    required this.enrolledCourseId,
-    required this.following,
-    required this.followers,
+    this.groupIds = const [],
+    this.enrolledCourseIds = const [],
+    this.following = const [],
+    this.followers = const [],
     this.profilePicture,
     this.bio,
   });
@@ -20,10 +20,6 @@ class LocalUser extends Equatable {
       email: '',
       points: 0,
       fullName: '',
-      groupId: [],
-      enrolledCourseId: [],
-      following: [],
-      followers: [],
     );
   }
 
@@ -31,8 +27,8 @@ class LocalUser extends Equatable {
   final String email;
   final int points;
   final String fullName;
-  final List<String> groupId;
-  final List<String> enrolledCourseId;
+  final List<String> groupIds;
+  final List<String> enrolledCourseIds;
   final List<String> following;
   final List<String> followers;
   final String? profilePicture;
