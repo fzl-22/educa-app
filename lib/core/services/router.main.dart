@@ -47,12 +47,12 @@ Route<dynamic> generateRoute(RouteSettings settings) {
       );
     case Dashboard.routeName:
       return _pageBuilder(
-        (p0) => const Dashboard(),
+        (_) => const Dashboard(),
         settings: settings,
       );
     case '/forgot-password':
       return _pageBuilder(
-        (p0) => const fui.ForgotPasswordScreen(),
+        (_) => const fui.ForgotPasswordScreen(),
         settings: settings,
       );
     default:
