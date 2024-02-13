@@ -1,4 +1,5 @@
 import 'package:education_app/core/res/colours.dart';
+import 'package:education_app/core/res/text_styles.dart';
 import 'package:flutter/material.dart';
 
 class CoreUtils {
@@ -14,17 +15,16 @@ class CoreUtils {
         SnackBar(
           content: Text(
             message,
-            style: const TextStyle(
-              color: Colours.whiteColour,
-              fontWeight: FontWeight.bold,
-            ),
+            style: TextStyles.medium14,
           ),
+          dismissDirection: DismissDirection.horizontal,
           behavior: SnackBarBehavior.floating,
           backgroundColor: Colours.primaryColour,
+          showCloseIcon: true,
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(10),
           ),
-          margin: const EdgeInsets.all(10),
+          margin: const EdgeInsets.all(24),
         ),
       );
   }

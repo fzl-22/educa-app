@@ -103,6 +103,26 @@ class TextStyles {
     fontSize: 16,
   );
 
+  static const bold14 = TextStyle(
+    fontWeight: FontWeight.bold,
+    fontSize: 14,
+  );
+
+  static const medium14 = TextStyle(
+    fontWeight: FontWeight.w500,
+    fontSize: 14,
+  );
+
+  static const regular14 = TextStyle(
+    fontWeight: FontWeight.normal,
+    fontSize: 14,
+  );
+
+  static const light14 = TextStyle(
+    fontWeight: FontWeight.w300,
+    fontSize: 14,
+  );
+
   static const bold11 = TextStyle(
     fontWeight: FontWeight.bold,
     fontSize: 11,
