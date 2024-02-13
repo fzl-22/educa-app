@@ -10,7 +10,9 @@ import 'package:education_app/core/utils/core_utils.dart';
 import 'package:education_app/src/auth/data/models/user_model.dart';
 import 'package:education_app/src/auth/presentation/bloc/auth_bloc.dart';
 import 'package:education_app/src/auth/presentation/views/sign_up_screen.dart';
+import 'package:education_app/src/auth/presentation/widgets/auth_navigation_button.dart';
 import 'package:education_app/src/auth/presentation/widgets/sign_in_form.dart';
+import 'package:education_app/src/auth/presentation/widgets/sign_in_screen.dart';
 import 'package:education_app/src/dashboard/presentation/views/dashboard.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
@@ -72,7 +74,7 @@ class _SignInScreenState extends State<SignInScreen> {
             child: SafeArea(
               child: ListView(
                 shrinkWrap: true,
-                padding: const EdgeInsets.symmetric(horizontal: 20),
+                padding: const EdgeInsets.fromLTRB(24, 48, 24, 0),
                 children: [
                   Text(
                     'Easy to learn, discover more skills',
@@ -80,39 +82,21 @@ class _SignInScreenState extends State<SignInScreen> {
                       fontFamily: Fonts.aeonik,
                     ),
                   ),
-                  const SizedBox(height: 10),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      const Text(
-                        'Sign in to your account',
-                        style: TextStyles.regular16,
-                      ),
-                      Baseline(
-                        baseline: 100,
-                        baselineType: TextBaseline.alphabetic,
-                        child: TextButton(
-                          onPressed: () {
-                            Navigator.pushReplacementNamed(
-                              context,
-                              SignUpScreen.routeName,
-                            );
-                          },
-                          child: const Text('Register account?'),
-                        ),
-                      ),
-                    ],
+                  const SizedBox(height: 20),
+                  const Text(
+                    'Sign in to your account',
+                    style: TextStyles.regular16,
                   ),
-                  const SizedBox(height: 10),
+                  const SizedBox(height: 20),
                   SignInForm(
                     emailController: emailController,
                     passwordController: passwordController,
                     formKey: formKey,
                   ),
-                  const SizedBox(height: 20),
+                  const SizedBox(height: 10),
                   Align(
                     alignment: Alignment.centerRight,
-                    child: TextButton(
+                    child: AuthTextButton(
                       onPressed: () {
                         Navigator.pushNamed(
                           context,
@@ -122,7 +106,7 @@ class _SignInScreenState extends State<SignInScreen> {
                       child: const Text('Forgot password?'),
                     ),
                   ),
-                  const SizedBox(height: 30),
+                  const SizedBox(height: 20),
                   RoundedButton(
                     onPressed: () {
                       login(context);
@@ -138,6 +122,17 @@ class _SignInScreenState extends State<SignInScreen> {
                             ),
                           )
                         : const Text('Sign In'),
+                  ),
+                  const SizedBox(height: 20),
+                  AuthNavigationButton(
+                    normalText: "Don't have an account?",
+                    highlightedText: 'Register',
+                    onPressed: () {
+                      Navigator.pushReplacementNamed(
+                        context,
+                        SignUpScreen.routeName,
+                      );
+                    },
                   ),
                 ],
               ),
