@@ -1,5 +1,5 @@
 import 'package:education_app/core/common/views/page_under_construction.dart';
-import 'package:education_app/core/services/injection.dart';
+import 'package:education_app/core/services/injection_container.dart';
 import 'package:education_app/src/on_boarding/presentation/cubit/on_boarding_cubit.dart';
 import 'package:education_app/src/on_boarding/presentation/views/on_boarding_screen.dart';
 import 'package:flutter/material.dart';
