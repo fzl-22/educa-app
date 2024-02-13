@@ -51,7 +51,6 @@ class OnBoardingBody extends StatelessWidget {
               ),
               OnBoardingButton(
                 onPressed: () {
-                  // TODO(getStarted): implement this functionality
                   context.read<OnBoardingCubit>().cacheFirstTimer();
                   // push user to the appropriate screen
                 },

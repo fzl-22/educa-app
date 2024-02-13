@@ -36,13 +36,9 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
         child: BlocConsumer<OnBoardingCubit, OnBoardingState>(
           listener: (context, state) {
             if (state is OnBoardingStatus && !state.isFirstTimer) {
-              debugPrint(state.isFirstTimer.toString());
-              Navigator.pushReplacementNamed(
-                context,
-                '/home',
-              );
+              Navigator.pushReplacementNamed(context, '/home');
             } else if (state is UserCached) {
-              // TODO(userCachedHandler): Push to the appropriate screen
+              Navigator.pushReplacementNamed(context, '/');
             }
           },
           builder: (context, state) {
@@ -50,7 +46,7 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
                 state is CachingFirstTimer) {
               return const LoadingView();
             }
-        
+
             return Stack(
               children: [
                 PageView(
