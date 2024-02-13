@@ -1,5 +1,5 @@
-import 'package:education_app/core/utils/typedef.dart';
-import 'package:education_app/src/auth/domain/entities/user.dart';
+import 'package:educa_app/core/utils/typedef.dart';
+import 'package:educa_app/src/auth/domain/entities/user.dart';
 
 class LocalUserModel extends LocalUser {
   const LocalUserModel({

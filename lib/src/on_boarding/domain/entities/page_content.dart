@@ -1,4 +1,4 @@
-import 'package:education_app/core/res/media_res.dart';
+import 'package:educa_app/core/res/media_res.dart';
 import 'package:equatable/equatable.dart';
 
 class PageContent extends Equatable {

@@ -1,4 +1,4 @@
-import 'package:education_app/core/utils/typedef.dart';
+import 'package:educa_app/core/utils/typedef.dart';
 
 abstract class UseCaseWithParams<T, Params> {
   const UseCaseWithParams();

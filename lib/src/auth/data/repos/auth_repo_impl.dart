@@ -1,11 +1,11 @@
 import 'package:dartz/dartz.dart';
-import 'package:education_app/core/enums/update_user.dart';
-import 'package:education_app/core/errors/exception.dart';
-import 'package:education_app/core/errors/failure.dart';
-import 'package:education_app/core/utils/typedef.dart';
-import 'package:education_app/src/auth/data/datasources/auth_remote_data_source.dart';
-import 'package:education_app/src/auth/domain/entities/user.dart';
-import 'package:education_app/src/auth/domain/repos/auth_repo.dart';
+import 'package:educa_app/core/enums/update_user.dart';
+import 'package:educa_app/core/errors/exception.dart';
+import 'package:educa_app/core/errors/failure.dart';
+import 'package:educa_app/core/utils/typedef.dart';
+import 'package:educa_app/src/auth/data/datasources/auth_remote_data_source.dart';
+import 'package:educa_app/src/auth/domain/entities/user.dart';
+import 'package:educa_app/src/auth/domain/repos/auth_repo.dart';
 
 class AuthRepoImpl implements AuthRepo {
   const AuthRepoImpl(this._remoteDataSource);

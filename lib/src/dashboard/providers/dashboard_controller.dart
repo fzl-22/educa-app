@@ -1,5 +1,5 @@
-import 'package:education_app/core/common/app/providers/tab_navigator.dart';
-import 'package:education_app/core/common/views/persistent_view.dart';
+import 'package:educa_app/core/common/app/providers/tab_navigator.dart';
+import 'package:educa_app/core/common/views/persistent_view.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 

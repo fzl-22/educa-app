@@ -1,5 +1,5 @@
-import 'package:education_app/core/errors/exception.dart';
-import 'package:education_app/src/on_boarding/data/datasources/on_boarding_local_data_source.dart';
+import 'package:educa_app/core/errors/exception.dart';
+import 'package:educa_app/src/on_boarding/data/datasources/on_boarding_local_data_source.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mocktail/mocktail.dart';
 import 'package:shared_preferences/shared_preferences.dart';

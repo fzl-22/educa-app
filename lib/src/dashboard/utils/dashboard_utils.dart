@@ -1,6 +1,6 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:education_app/core/services/injection_container.dart';
-import 'package:education_app/src/auth/data/models/user_model.dart';
+import 'package:educa_app/core/services/injection_container.dart';
+import 'package:educa_app/src/auth/data/models/user_model.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 
 class DashboardUtils {

@@ -1,6 +1,6 @@
-import 'package:education_app/core/res/colours.dart';
-import 'package:education_app/core/res/fonts.dart';
-import 'package:education_app/core/res/text_styles.dart';
+import 'package:educa_app/core/res/colours.dart';
+import 'package:educa_app/core/res/fonts.dart';
+import 'package:educa_app/core/res/text_styles.dart';
 import 'package:flutter/material.dart';
 
 class OnBoardingButton extends StatelessWidget {

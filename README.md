@@ -1,4 +1,4 @@
-# Educa
+# EDUCA APP
 
 Educa is an online learning platform built using Flutter and Firebase. This project aims to demonstrate Clean Architecture and the concept of Test-Driven Design.
 

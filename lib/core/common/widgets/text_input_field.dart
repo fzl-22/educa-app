@@ -1,4 +1,4 @@
-import 'package:education_app/core/res/text_styles.dart';
+import 'package:educa_app/core/res/text_styles.dart';
 import 'package:flutter/material.dart';
 
 class TextInputField extends StatelessWidget {

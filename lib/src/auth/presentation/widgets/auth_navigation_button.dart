@@ -1,4 +1,4 @@
-import 'package:education_app/src/auth/presentation/widgets/sign_in_screen.dart';
+import 'package:educa_app/src/auth/presentation/widgets/sign_in_screen.dart';
 import 'package:flutter/material.dart';
 
 

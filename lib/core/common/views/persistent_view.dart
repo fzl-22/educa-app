@@ -1,4 +1,4 @@
-import 'package:education_app/core/common/app/providers/tab_navigator.dart';
+import 'package:educa_app/core/common/app/providers/tab_navigator.dart';
 import 'package:flutter/widgets.dart';
 import 'package:provider/provider.dart';
 

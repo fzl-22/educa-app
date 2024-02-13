@@ -1,9 +1,9 @@
 import 'package:bloc_test/bloc_test.dart';
 import 'package:dartz/dartz.dart';
-import 'package:education_app/core/errors/failure.dart';
-import 'package:education_app/src/on_boarding/domain/usecases/cache_first_timer.dart';
-import 'package:education_app/src/on_boarding/domain/usecases/check_if_user_is_first_timer.dart';
-import 'package:education_app/src/on_boarding/presentation/cubit/on_boarding_cubit.dart';
+import 'package:educa_app/core/errors/failure.dart';
+import 'package:educa_app/src/on_boarding/domain/usecases/cache_first_timer.dart';
+import 'package:educa_app/src/on_boarding/domain/usecases/check_if_user_is_first_timer.dart';
+import 'package:educa_app/src/on_boarding/presentation/cubit/on_boarding_cubit.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mocktail/mocktail.dart';
 

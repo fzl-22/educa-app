@@ -1,4 +1,4 @@
-import 'package:education_app/core/common/widgets/text_input_field.dart';
+import 'package:educa_app/core/common/widgets/text_input_field.dart';
 import 'package:flutter/material.dart';
 import 'package:iconly/iconly.dart';
 

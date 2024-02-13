@@ -1,12 +1,12 @@
 import 'dart:io';
 
 import 'package:bloc/bloc.dart';
-import 'package:education_app/core/enums/update_user.dart';
-import 'package:education_app/src/auth/domain/entities/user.dart';
-import 'package:education_app/src/auth/domain/usecases/forgot_password.dart';
-import 'package:education_app/src/auth/domain/usecases/sign_in.dart';
-import 'package:education_app/src/auth/domain/usecases/sign_up.dart';
-import 'package:education_app/src/auth/domain/usecases/update_user.dart';
+import 'package:educa_app/core/enums/update_user.dart';
+import 'package:educa_app/src/auth/domain/entities/user.dart';
+import 'package:educa_app/src/auth/domain/usecases/forgot_password.dart';
+import 'package:educa_app/src/auth/domain/usecases/sign_in.dart';
+import 'package:educa_app/src/auth/domain/usecases/sign_up.dart';
+import 'package:educa_app/src/auth/domain/usecases/update_user.dart';
 import 'package:equatable/equatable.dart';
 
 part 'auth_event.dart';

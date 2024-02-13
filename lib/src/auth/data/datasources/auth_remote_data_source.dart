@@ -2,11 +2,11 @@ import 'dart:convert';
 import 'dart:io';
 
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:education_app/core/enums/update_user.dart';
-import 'package:education_app/core/errors/exception.dart';
-import 'package:education_app/core/utils/constants.dart';
-import 'package:education_app/core/utils/typedef.dart';
-import 'package:education_app/src/auth/data/models/user_model.dart';
+import 'package:educa_app/core/enums/update_user.dart';
+import 'package:educa_app/core/errors/exception.dart';
+import 'package:educa_app/core/utils/constants.dart';
+import 'package:educa_app/core/utils/typedef.dart';
+import 'package:educa_app/src/auth/data/models/user_model.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_storage/firebase_storage.dart';
 import 'package:flutter/foundation.dart';

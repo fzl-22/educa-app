@@ -1,9 +1,9 @@
-import 'package:education_app/core/extensions/context_extension.dart';
-import 'package:education_app/core/res/fonts.dart';
-import 'package:education_app/core/res/text_styles.dart';
-import 'package:education_app/src/on_boarding/domain/entities/page_content.dart';
-import 'package:education_app/src/on_boarding/presentation/cubit/on_boarding_cubit.dart';
-import 'package:education_app/src/on_boarding/presentation/widgets/on_boarding_button.dart';
+import 'package:educa_app/core/extensions/context_extension.dart';
+import 'package:educa_app/core/res/fonts.dart';
+import 'package:educa_app/core/res/text_styles.dart';
+import 'package:educa_app/src/on_boarding/domain/entities/page_content.dart';
+import 'package:educa_app/src/on_boarding/presentation/cubit/on_boarding_cubit.dart';
+import 'package:educa_app/src/on_boarding/presentation/widgets/on_boarding_button.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
