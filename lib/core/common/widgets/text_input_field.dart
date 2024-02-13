@@ -1,3 +1,4 @@
+import 'package:education_app/core/res/text_styles.dart';
 import 'package:flutter/material.dart';
 
 class TextInputField extends StatelessWidget {
@@ -66,11 +67,7 @@ class TextInputField extends StatelessWidget {
         fillColor: fillColour,
         suffixIcon: suffixIcon,
         hintText: hintText,
-        hintStyle: hintStyle ??
-            const TextStyle(
-              fontSize: 16,
-              fontWeight: FontWeight.w400,
-            ),
+        hintStyle: hintStyle ?? TextStyles.regular16,
       ),
     );
   }

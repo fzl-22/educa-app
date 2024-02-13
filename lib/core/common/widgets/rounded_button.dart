@@ -1,4 +1,5 @@
 import 'package:education_app/core/res/colours.dart';
+import 'package:education_app/core/res/text_styles.dart';
 import 'package:flutter/material.dart';
 
 class RoundedButton extends StatelessWidget {
@@ -22,6 +23,7 @@ class RoundedButton extends StatelessWidget {
         backgroundColor: buttonColour ?? Colours.primaryColour,
         foregroundColor: labelColour ?? Colors.white,
         minimumSize: const Size(double.maxFinite, 50),
+        textStyle: TextStyles.regular16,
       ),
       onPressed: onPressed,
       child: child,

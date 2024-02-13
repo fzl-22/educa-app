@@ -1,5 +1,6 @@
 import 'package:education_app/core/res/colours.dart';
 import 'package:education_app/core/res/fonts.dart';
+import 'package:education_app/core/res/text_styles.dart';
 import 'package:flutter/material.dart';
 
 class OnBoardingButton extends StatelessWidget {
@@ -22,9 +23,8 @@ class OnBoardingButton extends StatelessWidget {
           horizontal: 50,
           vertical: 17,
         ),
-        textStyle: const TextStyle(
+        textStyle: TextStyles.regular16.copyWith(
           fontFamily: Fonts.aeonik,
-          fontWeight: FontWeight.bold,
         ),
       ),
       onPressed: onPressed,

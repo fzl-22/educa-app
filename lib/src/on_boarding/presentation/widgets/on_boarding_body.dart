@@ -1,5 +1,6 @@
 import 'package:education_app/core/extensions/context_extension.dart';
 import 'package:education_app/core/res/fonts.dart';
+import 'package:education_app/core/res/text_styles.dart';
 import 'package:education_app/src/on_boarding/domain/entities/page_content.dart';
 import 'package:education_app/src/on_boarding/presentation/cubit/on_boarding_cubit.dart';
 import 'package:education_app/src/on_boarding/presentation/widgets/on_boarding_button.dart';
@@ -33,10 +34,8 @@ class OnBoardingBody extends StatelessWidget {
               Text(
                 pageContent.title,
                 textAlign: TextAlign.center,
-                style: const TextStyle(
+                style: TextStyles.bold32.copyWith(
                   fontFamily: Fonts.aeonik,
-                  fontSize: 40,
-                  fontWeight: FontWeight.bold,
                 ),
               ),
               SizedBox(

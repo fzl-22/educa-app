@@ -4,6 +4,7 @@ import 'package:education_app/core/common/widgets/rounded_button.dart';
 import 'package:education_app/core/res/colours.dart';
 import 'package:education_app/core/res/fonts.dart';
 import 'package:education_app/core/res/media_res.dart';
+import 'package:education_app/core/res/text_styles.dart';
 import 'package:education_app/core/services/injection_container.dart';
 import 'package:education_app/core/utils/core_utils.dart';
 import 'package:education_app/src/auth/data/models/user_model.dart';
@@ -73,12 +74,10 @@ class _SignInScreenState extends State<SignInScreen> {
                 shrinkWrap: true,
                 padding: const EdgeInsets.symmetric(horizontal: 20),
                 children: [
-                  const Text(
+                  Text(
                     'Easy to learn, discover more skills',
-                    style: TextStyle(
+                    style: TextStyles.bold32.copyWith(
                       fontFamily: Fonts.aeonik,
-                      fontWeight: FontWeight.w700,
-                      fontSize: 32,
                     ),
                   ),
                   const SizedBox(height: 10),
@@ -87,9 +86,7 @@ class _SignInScreenState extends State<SignInScreen> {
                     children: [
                       const Text(
                         'Sign in to your account',
-                        style: TextStyle(
-                          fontSize: 14,
-                        ),
+                        style: TextStyles.regular16,
                       ),
                       Baseline(
                         baseline: 100,
@@ -137,7 +134,7 @@ class _SignInScreenState extends State<SignInScreen> {
                               width: 24,
                               child: CircularProgressIndicator(
                                 color: Colours.whiteColour,
-                                                            ),
+                              ),
                             ),
                           )
                         : const Text('Sign In'),
