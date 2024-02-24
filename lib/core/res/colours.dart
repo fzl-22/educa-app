@@ -67,4 +67,6 @@ class Colours {
 
   /// TRANSPARENT
   static const transparentColour = Colors.transparent;
+
+  static const greyColour = Colors.grey;
 }

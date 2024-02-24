@@ -26,7 +26,7 @@ class LocalUserModel extends LocalUser {
           (map['enrolledCourseIds'] as List<dynamic>).cast<String>(),
       following: (map['following'] as List<dynamic>).cast<String>(),
       followers: (map['followers'] as List<dynamic>).cast<String>(),
-      profilePicture: map['profilPicture'] as String?,
+      profilePicture: map['profilePicture'] as String?,
       bio: map['bio'] as String?,
     );
   }
