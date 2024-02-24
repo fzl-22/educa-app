@@ -44,8 +44,10 @@ class _DashboardState extends State<Dashboard> {
                 children: controller.screens,
               ),
               bottomNavigationBar: BottomNavigationBar(
+                type: BottomNavigationBarType.fixed,
                 currentIndex: controller.currentIndex,
                 showSelectedLabels: false,
+                showUnselectedLabels: false,
                 backgroundColor: Colours.whiteColour,
                 elevation: 8,
                 onTap: controller.changeIndex,
@@ -59,7 +61,7 @@ class _DashboardState extends State<Dashboard> {
                           ? Colours.primaryColour
                           : Colors.grey,
                     ),
-                    label: '',
+                    label: 'Home',
                     backgroundColor: Colours.whiteColour,
                   ),
                   BottomNavigationBarItem(
