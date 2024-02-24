@@ -44,6 +44,7 @@ class EducaApp extends StatelessWidget {
           ),
           colorScheme: ColorScheme.fromSwatch(
             accentColor: Colours.primaryColour,
+            backgroundColor: Colours.whiteColour,
           ),
         ),
         onGenerateRoute: generateRoute,
