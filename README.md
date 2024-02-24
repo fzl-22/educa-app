@@ -25,7 +25,7 @@ flutter pub get
 Create a Firebase project on [https://console.firebase.google.com](https://console.firebase.google.com), and activate and configure Firebase Auth, Firebase Firestore, and Firebase Cloud Storage. Then, run this command to connect this app to newly created Firebase project.
 
 ```
-flutterfire configure --project=<project-name> --platforms=android,ios
+flutterfire configure --project=<project-name> --platforms=android
 ```
 
 Make sure to turn on and connect to a physical device or an emulator, and execute this command to run the project.
