@@ -9,6 +9,8 @@ extension ContextExtension on BuildContext {
 
   MediaQueryData get mediaQuery => MediaQuery.of(this);
 
+  TargetPlatform get platform => theme.platform;
+
   Size get size => mediaQuery.size;
   double get width => size.width;
   double get height => size.height;
