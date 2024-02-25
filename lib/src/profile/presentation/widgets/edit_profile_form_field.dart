@@ -17,7 +17,7 @@ class EditProfileFormField extends StatelessWidget {
   final TextEditingController controller;
   final bool readOnly;
   final bool obscureText;
-  final int? maxLines;
+  final int maxLines;
   final String? hintText;
 
   @override

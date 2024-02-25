@@ -14,7 +14,7 @@ class TextInputField extends StatelessWidget {
     this.keyboardType,
     this.overrideValidator = false,
     this.hintStyle,
-    this.maxLines,
+    this.maxLines = 1,
     super.key,
   });
 
@@ -29,7 +29,7 @@ class TextInputField extends StatelessWidget {
   final TextInputType? keyboardType;
   final bool overrideValidator;
   final TextStyle? hintStyle;
-  final int? maxLines;
+  final int maxLines;
 
   @override
   Widget build(BuildContext context) {

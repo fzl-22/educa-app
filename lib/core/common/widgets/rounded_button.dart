@@ -23,6 +23,9 @@ class RoundedButton extends StatelessWidget {
         backgroundColor: buttonColour ?? Colours.primaryColour,
         foregroundColor: labelColour ?? Colors.white,
         minimumSize: const Size(double.maxFinite, 50),
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(16),
+        ),
         textStyle: TextStyles.medium16,
       ),
       onPressed: onPressed,
