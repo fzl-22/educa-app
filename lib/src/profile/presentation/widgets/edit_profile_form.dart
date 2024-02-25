@@ -35,11 +35,6 @@ class EditProfileForm extends StatelessWidget {
           hintText: context.currentUser?.email.obscureEmail,
         ),
         EditProfileFormField(
-          fieldTitle: 'BIO',
-          controller: bioController,
-          hintText: context.currentUser?.bio,
-        ),
-        EditProfileFormField(
           fieldTitle: 'CURRENT PASSWORD',
           controller: oldPasswordController,
           hintText: '********',
@@ -56,6 +51,12 @@ class EditProfileForm extends StatelessWidget {
               obscureText: true,
             );
           },
+        ),
+        EditProfileFormField(
+          fieldTitle: 'BIO',
+          controller: bioController,
+          hintText: context.currentUser?.bio,
+          maxLines: 4,
         ),
       ],
     );

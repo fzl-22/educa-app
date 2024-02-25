@@ -8,6 +8,7 @@ class EditProfileFormField extends StatelessWidget {
     required this.controller,
     this.readOnly = false,
     this.obscureText = false,
+    this.maxLines = 1,
     this.hintText,
     super.key,
   });
@@ -16,6 +17,7 @@ class EditProfileFormField extends StatelessWidget {
   final TextEditingController controller;
   final bool readOnly;
   final bool obscureText;
+  final int? maxLines;
   final String? hintText;
 
   @override
@@ -36,6 +38,7 @@ class EditProfileFormField extends StatelessWidget {
           hintText: hintText,
           readOnly: readOnly,
           obscureText: obscureText,
+          maxLines: maxLines,
         ),
         const SizedBox(height: 30),
       ],

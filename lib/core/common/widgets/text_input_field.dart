@@ -14,6 +14,7 @@ class TextInputField extends StatelessWidget {
     this.keyboardType,
     this.overrideValidator = false,
     this.hintStyle,
+    this.maxLines,
     super.key,
   });
 
@@ -28,6 +29,7 @@ class TextInputField extends StatelessWidget {
   final TextInputType? keyboardType;
   final bool overrideValidator;
   final TextStyle? hintStyle;
+  final int? maxLines;
 
   @override
   Widget build(BuildContext context) {
@@ -47,22 +49,26 @@ class TextInputField extends StatelessWidget {
       keyboardType: keyboardType,
       obscureText: obscureText,
       readOnly: readOnly,
+      maxLines: maxLines,
       decoration: InputDecoration(
         border: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(90),
+          borderRadius: BorderRadius.circular(16),
         ),
         enabledBorder: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(90),
+          borderRadius: BorderRadius.circular(16),
           borderSide: const BorderSide(color: Colors.grey),
         ),
         focusedBorder: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(90),
+          borderRadius: BorderRadius.circular(16),
           borderSide: BorderSide(
             color: Theme.of(context).primaryColor,
           ),
         ),
         // overwriting the default padding helps with that puffy look
-        contentPadding: const EdgeInsets.symmetric(horizontal: 20),
+        contentPadding: const EdgeInsets.symmetric(
+          horizontal: 20,
+          vertical: 10,
+        ),
         filled: filled,
         fillColor: fillColour,
         suffixIcon: suffixIcon,
