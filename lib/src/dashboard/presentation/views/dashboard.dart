@@ -33,7 +33,6 @@ class _DashboardState extends State<Dashboard> {
       stream: DashboardUtils.userDataStream,
       builder: (context, snapshot) {
         if (snapshot.hasData && snapshot.data is LocalUserModel) {
-          debugPrint('User ${snapshot.data?.profilePicture}');
           context.read<UserProvider>().user = snapshot.data;
         }
 

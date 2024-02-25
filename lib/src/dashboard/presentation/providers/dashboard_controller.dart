@@ -48,7 +48,6 @@ class DashboardController extends ChangeNotifier {
 
   void changeIndex(int index) {
     if (_currentIndex == index) return;
-    debugPrint('new index: $index');
     _currentIndex = index;
     _indexHistory.add(index);
     notifyListeners();

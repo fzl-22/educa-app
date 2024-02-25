@@ -12,7 +12,6 @@ class ProfileHeader extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    debugPrint('Profile Picture ${context.currentUser?.profilePicture}');
     return Consumer<UserProvider>(
       builder: (_, provider, __) {
         final user = provider.user;
