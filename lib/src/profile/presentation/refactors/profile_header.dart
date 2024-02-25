@@ -3,6 +3,7 @@ import 'package:educa_app/core/extensions/context_extension.dart';
 import 'package:educa_app/core/res/colours.dart';
 import 'package:educa_app/core/res/media_res.dart';
 import 'package:educa_app/core/res/text_styles.dart';
+import 'package:educa_app/src/profile/presentation/widgets/user_avatar.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
@@ -23,9 +24,8 @@ class ProfileHeader extends StatelessWidget {
           margin: const EdgeInsets.symmetric(vertical: 16),
           child: Column(
             children: [
-              CircleAvatar(
-                radius: 50,
-                backgroundImage: image != null
+              UserAvatar(
+                image: image != null
                     ? NetworkImage(image)
                     : const AssetImage(MediaRes.user) as ImageProvider,
               ),
