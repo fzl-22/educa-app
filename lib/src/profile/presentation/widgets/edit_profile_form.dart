@@ -43,6 +43,7 @@ class EditProfileForm extends StatelessWidget {
           fieldTitle: 'CURRENT PASSWORD',
           controller: oldPasswordController,
           hintText: '********',
+          obscureText: true,
         ),
         StatefulBuilder(
           builder: (context, setState) {
@@ -52,6 +53,7 @@ class EditProfileForm extends StatelessWidget {
               controller: passwordController,
               hintText: '********',
               readOnly: oldPasswordController.text.isEmpty,
+              obscureText: true,
             );
           },
         ),
