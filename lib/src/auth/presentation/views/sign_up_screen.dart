@@ -1,11 +1,11 @@
 import 'package:educa_app/core/common/app/providers/user_provider.dart';
 import 'package:educa_app/core/common/widgets/gradient_background.dart';
 import 'package:educa_app/core/common/widgets/rounded_button.dart';
+import 'package:educa_app/core/injection/injection_container.dart';
 import 'package:educa_app/core/res/colours.dart';
 import 'package:educa_app/core/res/fonts.dart';
 import 'package:educa_app/core/res/media_res.dart';
 import 'package:educa_app/core/res/text_styles.dart';
-import 'package:educa_app/core/services/injection_container.dart';
 import 'package:educa_app/core/utils/core_utils.dart';
 import 'package:educa_app/src/auth/data/models/user_model.dart';
 import 'package:educa_app/src/auth/presentation/bloc/auth_bloc.dart';

@@ -1,8 +1,9 @@
+import 'package:educa_app/core/common/app/providers/course_of_the_day_provider.dart';
 import 'package:educa_app/core/common/app/providers/user_provider.dart';
+import 'package:educa_app/core/injection/injection_container.dart';
 import 'package:educa_app/core/res/colours.dart';
 import 'package:educa_app/core/res/fonts.dart';
-import 'package:educa_app/core/services/injection_container.dart';
-import 'package:educa_app/core/services/router.dart';
+import 'package:educa_app/core/router/router.dart';
 import 'package:educa_app/firebase_options.dart';
 import 'package:educa_app/src/dashboard/presentation/providers/dashboard_controller.dart';
 import 'package:firebase_core/firebase_core.dart';
@@ -32,6 +33,7 @@ class EducaApp extends StatelessWidget {
       providers: [
         ChangeNotifierProvider(create: (_) => UserProvider()),
         ChangeNotifierProvider(create: (_) => DashboardController()),
+        ChangeNotifierProvider(create: (_) => CourseOfTheDayProvider()),
       ],
       child: MaterialApp(
         title: 'Educa App',

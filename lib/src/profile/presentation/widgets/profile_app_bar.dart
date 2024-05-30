@@ -2,9 +2,9 @@ import 'dart:async';
 
 import 'package:educa_app/core/common/widgets/popup_item.dart';
 import 'package:educa_app/core/extensions/context_extension.dart';
+import 'package:educa_app/core/injection/injection_container.dart';
 import 'package:educa_app/core/res/colours.dart';
 import 'package:educa_app/core/res/text_styles.dart';
-import 'package:educa_app/core/services/injection_container.dart';
 import 'package:educa_app/src/auth/presentation/bloc/auth_bloc.dart';
 import 'package:educa_app/src/profile/presentation/views/edit_profile_view.dart';
 import 'package:firebase_auth/firebase_auth.dart';

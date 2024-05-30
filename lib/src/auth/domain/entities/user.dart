@@ -23,6 +23,8 @@ class LocalUser extends Equatable {
     );
   }
 
+  bool get isAdmin => email == 'ahmad.faisalewy@gmail.com';
+
   final String uid;
   final String email;
   final int points;
